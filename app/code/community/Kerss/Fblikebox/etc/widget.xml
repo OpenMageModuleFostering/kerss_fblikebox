@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<widgets>
+    <fbwidget type="fblikebox/fblikebox">
+        <name>Facebook Likebox Widget</name>
+        <description type="desc">Add Facebook Widget</description>
+    </fbwidget>
+</widgets>

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <kerss translate="label" module="fblikebox">
+            <label>Kerss Tech</label>
+            <sort_order>120</sort_order>
+        </kerss>
+    </tabs>
+    <sections>
+        <fblikebox  translate="label" module="fblikebox">
+            <label>Facebook Like Box</label>
+            <tab>kerss</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <implement translate="label">
+                    <label>Implement Code</label>
+                    <frontend_model>fblikebox/adminhtml_system_config_implementcode</frontend_model>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </implement>
+                <general translate="label">
+                    <label>General Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable Facebook Like box</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <fb_block_title translate="label">
+                            <label>Facebook Block Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Facebook block title]]></comment>
+                        </fb_block_title>
+                        <fb_href translate="label">
+                            <label><![CDATA[Facebook Page URL]]></label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The absolute URL of the Facebook Page that will be liked.]]></comment>
+                        </fb_href>
+                        <fb_width translate="label">
+                            <label>Width</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The pixel width of the plugin. Min. is 180 & Max. is 500]]></comment>
+                        </fb_width>
+                        <fb_height translate="label">
+                            <label>Height</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[The pixel height of the plugin. Min. is 70]]></comment>
+                        </fb_height>
+                        <fb_tabs translate="label">
+                            <label>Tabs</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>fblikebox/system_config_source_tabs</source_model>
+                            <validate>required-entry</validate>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Tabs to render i.e. timeline, events, messages. Press Ctrl to select multiple tabs, i.e. timeline, events.]]></comment>
+                        </fb_tabs>
+                        <fb_small_header translate="label">
+                            <label>Use Small Header</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/system_config_source_options</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Use the small header instead]]></comment>
+                        </fb_small_header>
+                        <fb_hide_cover translate="label">
+                            <label>Hide Cover Photos</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/options</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Hide cover photo in the header]]></comment>
+                        </fb_hide_cover>
+                        <fb_show_faces translate="label">
+                            <label>Show Friends Faces</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/options</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Show profile photos when friends like this]]></comment>
+                        </fb_show_faces>
+                    </fields>
+                </general>
+            </groups>
+        </fblikebox>
+    </sections>
+</config>

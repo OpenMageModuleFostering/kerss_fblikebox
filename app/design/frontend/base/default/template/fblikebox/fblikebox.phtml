@@ -1,0 +1,63 @@
+<?php
+/**
+ * Kerss Infotech
+ * Kerss Facebook Fanbox Magento Extension
+ *
+ * @category   Kerss
+ * @package    Kerss_Fblikebox
+ * @copyright  Copyright © 2015-2016 Kerss Infotech (http://kersstech.com/)
+ */
+$_helper = $this->helper('fblikebox');
+$enableFblikebox = $_helper->getConfigValue('fblikebox/general/enable');
+if ($enableFblikebox) {
+    ?>
+    <div class="block block-fblikebox">
+        <div class="block-title">
+            <strong><span><?php echo $_helper->getConfigValue('fblikebox/general/fb_block_title'); ?></span></strong>
+        </div>
+        <?php
+        $fb_href = $_helper->getConfigValue('fblikebox/general/fb_href');
+        $fb_width = $_helper->getConfigValue('fblikebox/general/fb_width');
+        $fb_height = $_helper->getConfigValue('fblikebox/general/fb_height');
+        $fb_tabs = $_helper->getConfigValue('fblikebox/general/fb_tabs');
+        $fb_small_header = $_helper->getConfigValue('fblikebox/general/fb_small_header');
+        $fb_hide_cover = $_helper->getConfigValue('fblikebox/general/fb_hide_cover');
+        $fb_show_faces = $_helper->getConfigValue('fblikebox/general/fb_show_faces');
+
+        $box_content = "";
+        $box_content .='<iframe src="http://www.facebook.com/plugins/likebox.php?href=' . urlencode($fb_href);
+        if ($fb_width) {
+            $box_content .= '&amp;width=' . $fb_width;
+        }
+
+        if ($fb_height) {
+            $box_content .= '&amp;height=' . $fb_height;
+        }
+
+        if ($fb_tabs) {
+            $box_content .= '&amp;tabs=' . $fb_tabs;
+        } else {
+            $box_content .= '&amp;tabs=timeline';
+        }
+
+        $box_content .= '&amp;small_header=' . $fb_small_header;
+        $box_content .= '&amp;hide_cover=' . $fb_hide_cover;
+        $box_content .= '&amp;show_facepile=' . $fb_show_faces;
+
+        $box_content .= '" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; ';
+
+        if ($fb_width) {
+            $box_content .= ' width:' . $fb_width . 'px; ';
+        }
+
+        if ($fb_height) {
+            $box_content .= ' height:' . $fb_height . 'px; ';
+        }
+        $box_content .= '"></iframe>';
+        ?>
+        <div id='fbfanbox'>
+            <?php echo $box_content; ?>
+        </div>
+    </div>
+    <?php
+}
