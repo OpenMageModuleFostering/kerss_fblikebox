@@ -11,14 +11,26 @@
 class Kerss_Fblikebox_Model_System_Config_Source_Options {
 
     /**
-     * Provide available options as a value/label array
+     * Options getter
      *
      * @return array
      */
     public function toOptionArray() {
         return array(
-            array('value' => 'true', 'label' => 'Yes'),
-            array('value' => 'false', 'label' => 'No'),
+            array('value' => 'true', 'label' => Mage::helper('adminhtml')->__('Yes')),
+            array('value' => 'false', 'label' => Mage::helper('adminhtml')->__('No')),
+        );
+    }
+
+    /**
+     * Get options in "key-value" format
+     *
+     * @return array
+     */
+    public function toArray() {
+        return array(
+            'true' => Mage::helper('adminhtml')->__('Yes'),
+            'false' => Mage::helper('adminhtml')->__('No'),
         );
     }
 

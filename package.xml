@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Kerss_Fblikebox</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
@@ -16,11 +16,11 @@ Features:&#xD;
 - Show/Hide cover photos, friends faces&#xD;
 - Set small or large header&#xD;
 - Manually implement facebook like box code in to template file, layout xml file or cms pages.</description>
-    <notes>First Release</notes>
+    <notes>V1.01 Fixed system configuration source model</notes>
     <authors><author><name>Kalpesh Sakhareliya</name><user>kersstech</user><email>kersstech@gmail.com</email></author></authors>
-    <date>2016-10-07</date>
-    <time>12:31:05</time>
-    <contents><target name="magecommunity"><dir name="Kerss"><dir name="Fblikebox"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><file name="Implementcode.php" hash="1598fe027e66a00196562818649d790c"/></dir></dir></dir><file name="Fblikebox.php" hash="a83260359a82ba3b333f6bb43d03e40e"/></dir><dir name="Helper"><file name="Data.php" hash="4c44a7a1d621a0871e9bbc5d66bd3935"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Options.php" hash="5d29e486ac56e0b1ccb57248ef021161"/><file name="Tabs.php" hash="6647598ba80de0d31aa80b4b2827758f"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="e71ce5ecd34fc17fbda293678a7bddbe"/><file name="config.xml" hash="045850f3549ba7bd80103232506aaed9"/><file name="system.xml" hash="1b37f3b746c17f465cb0b1f73d65be6a"/><file name="widget.xml" hash="3288bcabae0616e75ddc269af1bb4de8"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kerss_Fblikebox.xml" hash="d9a5fcdabe16b305147b1aa5e0fd252f"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="fblikebox.xml" hash="ac8d4d62c10f73e1237201dd49e01f2e"/></dir><dir name="template"><dir name="fblikebox"><file name="fblikebox.phtml" hash="4ad1ddc5b4e0552c294debf8c23b1add"/></dir></dir></dir></dir></dir></target></contents>
+    <date>2016-10-15</date>
+    <time>06:11:53</time>
+    <contents><target name="magecommunity"><dir name="Kerss"><dir name="Fblikebox"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><file name="Implementcode.php" hash="1598fe027e66a00196562818649d790c"/></dir></dir></dir><file name="Fblikebox.php" hash="a83260359a82ba3b333f6bb43d03e40e"/></dir><dir name="Helper"><file name="Data.php" hash="4c44a7a1d621a0871e9bbc5d66bd3935"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Options.php" hash="179a0c830371a16334c2883b03e93830"/><file name="Tabs.php" hash="6647598ba80de0d31aa80b4b2827758f"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="e71ce5ecd34fc17fbda293678a7bddbe"/><file name="config.xml" hash="045850f3549ba7bd80103232506aaed9"/><file name="system.xml" hash="6d76c5e8dcf40fee7b79d8a9bf46b606"/><file name="widget.xml" hash="3288bcabae0616e75ddc269af1bb4de8"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kerss_Fblikebox.xml" hash="d9a5fcdabe16b305147b1aa5e0fd252f"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="fblikebox.xml" hash="ac8d4d62c10f73e1237201dd49e01f2e"/></dir><dir name="template"><dir name="fblikebox"><file name="fblikebox.phtml" hash="4ad1ddc5b4e0552c294debf8c23b1add"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
