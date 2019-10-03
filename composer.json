@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Kerss_Fblikebox",
+    "name": "OpenMageModuleFostering\/Kerss_Fblikebox",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
-    "description": "Show a box of your Facebook fan on your store for customers to easily click “like” and follow updates ",
+    "description": "Show a box of your Facebook fan on your store for customers to easily click \u201clike\u201d and follow updates ",
     "authors": [
-    {
-        "name": "Kalpesh Sakhareliya",
-        "email": "kersstech@gmail.com"
-    }
-],
+        {
+            "name": "Kalpesh Sakhareliya",
+            "email": "kersstech@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
